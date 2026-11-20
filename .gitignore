@@ -1,0 +1,17 @@
+# LaTeX outputs and local previews
+/build/
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.xdv
+/main.pdf
+# Local files
+.DS_Store
+.env
+.env.*

@@ -1,0 +1,58 @@
+\section{StudyBirds}
+\label{sec:system}
+
+The system is organized around a course, its learning topics, and
+persistent study sessions. The description below combines the student
+prototype with the intended instructor feedback workflow; validation
+of the complete loop is part of the evaluation plan.
+
+\subsection{Course Materials and Study Context}
+
+Course preparation organizes uploaded materials into a course map and
+learning units with links to their sources. The intended review process
+lets an instructor inspect the organization and proposed learning
+activities before publishing them. Students may also create private
+courses for their own study. Such material and its associated learning
+history should remain separate from instructor-visible class reporting.
+
+\subsection{Guided Study}
+
+Students enter a topic with a purpose such as learning, practice, review,
+or exam preparation. A conversational tutor works alongside a board
+containing explanations, questions, and interactive activities.
+The tutor can respond to an attempt, provide a hint, or revisit a
+prerequisite. Generated examples should be distinguished from original
+course content so that students can check the source when an explanation
+is unclear.
+
+The student prototype supports pausing and resuming a session, retaining
+its teaching content, and producing a session recap and a topic study
+sheet. These outputs are intended to help a learner decide where to
+continue. They must also indicate which ideas were discussed and which
+were actually checked.
+
+\subsection{Evidence and Assistance}
+
+An answer alone does not describe the conditions under which it was
+produced. StudyBirds records attempts together with assistance context
+and uses that distinction when presenting learning evidence. For example,
+solving a question after an explicit hint may justify a follow-up
+independent check, but should not be reported as independent success.
+Session summaries should preserve this distinction and retain the
+history of incorrect attempts and subsequent corrections.
+
+This mechanism is intended to make progress claims inspectable.
+Its validity depends on correct grading, accurate identification of
+assistance, and a defensible connection between an activity and the
+learning objective it assesses.
+
+\subsection{Instructor Feedback}
+
+The instructor-facing goal is to turn permitted class evidence into a
+concise explanation of a specific difficulty, with a link to the relevant
+course source. For example, an insight might distinguish confusion about
+a formula's assumptions from an arithmetic error when applying it.
+An instructor could then inspect the evidence and revise an explanation
+or prepare a targeted activity. The usefulness and privacy of this
+workflow require separate validation; removing names alone does not
+establish anonymity.

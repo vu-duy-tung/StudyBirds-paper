@@ -1,0 +1,54 @@
+% StudyBirds working draft, based on the official IJCAI 2027 author kit.
+% Overleaf: select main.tex and pdfLaTeX.
+\documentclass{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \pdfpagewidth=8.5in
+  \pdfpageheight=11in
+\else
+  % Compatibility for local XeTeX/Tectonic builds.
+  \special{papersize=8.5in,11in}
+\fi
+\usepackage{ijcai27}
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[small]{caption}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{booktabs}
+\usepackage[switch]{lineno}
+\linenumbers
+\urlstyle{same}
+
+% Keep the official template metadata. Do not add author/title metadata here.
+\ifPDFTeX
+\pdfinfo{
+/TemplateVersion (IJCAI.2027.0)
+}
+\else
+\special{pdf:docinfo << /TemplateVersion (IJCAI.2027.0) >>}
+\fi
+
+\title{StudyBirds: Connecting Course Materials,\\
+Guided Study, and Teaching Feedback}
+\author{Anonymous Authors}
+% Replace only after confirming the author list and target track.
+% For a non-anonymous version, use the \affiliations and \emails syntax
+% shown in template/ijcai27.tex. Remove line numbers for camera-ready only.
+
+\begin{document}
+\maketitle
+\input{sections/00-abstract}
+\input{sections/01-introduction}
+\input{sections/02-related-work}
+\input{sections/03-system}
+\input{sections/04-evaluation}
+\input{sections/05-limitations}
+\input{sections/06-conclusion}
+\bibliographystyle{named}
+\bibliography{references}
+\end{document}
